@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alcanzer.findapp.MainActivity$PlaceholderFragment">
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/emailSignUp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/usernameETSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/passwordETSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/usernameETSignUp"
+        android:layout_alignStart="@+id/usernameETSignUp" />
+
+    <EditText
+        android:id="@+id/emailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded"
+        android:hint="E-Mail"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/passwordETSignUp"
+        android:layout_alignStart="@+id/passwordETSignUp" />
+</RelativeLayout>

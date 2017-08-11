@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alcanzer.findapp.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="Username"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/oldPasswordProfile"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="TextView"
+        android:layout_marginStart="72dp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="Old Password"
+        android:layout_alignBaseline="@+id/oldPasswordProfile"
+        android:layout_alignBottom="@+id/oldPasswordProfile"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="29dp"
+        android:text="New Password"
+        android:layout_below="@+id/oldPasswordProfile"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="18dp"
+        android:text="New Password"
+        android:layout_below="@+id/newPasswordProfile1"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="28dp"
+        android:text="E-Mail"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/oldPasswordProfile"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_marginStart="11dp" />
+
+    <EditText
+        android:id="@+id/newPasswordProfile1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignStart="@+id/oldPasswordProfile" />
+
+    <EditText
+        android:id="@+id/newPasswordProfile2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/newPasswordProfile1" />
+
+    <EditText
+        android:id="@+id/emailProfile"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/newPasswordProfile2" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/buttons"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Save"
+        android:layout_alignBaseline="@+id/back"
+        android:layout_alignBottom="@+id/back"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp" />
+</RelativeLayout>

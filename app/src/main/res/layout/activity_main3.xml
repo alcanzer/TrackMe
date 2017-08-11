@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alcanzer.findapp.HomeActivity">
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="59dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/search"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/profile"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.519" />
+
+    <Button
+        android:id="@+id/friends"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/friends"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginLeft="59dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.245"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.384" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:id="@+id/fab"
+        android:src="@drawable/logout"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <Button
+        android:id="@+id/startTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start tracking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/friends"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/stopTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Tracking"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/button2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintVertical_bias="0.437" />
+</android.support.constraint.ConstraintLayout>
