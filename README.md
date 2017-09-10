@@ -4,5 +4,4 @@ The user can access the location either by logging on to the mobile application 
 Look for "FindApp" after installation.
 
 
-Login: guest
-Password: guest123
+Login: guest | Password: guest123
